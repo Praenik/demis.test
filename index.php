@@ -1,4 +1,4 @@
-<? session_start(); ?>
+<?php session_start(); ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -17,7 +17,7 @@
 
 <body>
 
-    <? include_once 'templates/nav.php'; ?>
+    <?php include_once 'templates/nav.php'; ?>
     <div class="page">
         <form action="php/feedback_form.php" method="post" class="feedback_form">
             <h1 class="feedback_title">Обратная связь</h1>
@@ -38,12 +38,12 @@
         foreach ($messages as $message):
         ?>
         <div class="feedback_row">
-            <div class="feedback_cell" id="cell_name"><?=$message['name']?></div>
-            <div class="feedback_cell" id="cell_address"><?=$message['address']?></div>
-            <div class="feedback_cell" id="cell_telephone"><?=$message['telephone']?></div>
-            <div class="feedback_cell" id="cell_email"><?=$message['email']?></div>
+            <div class="feedback_cell" id="cell_name"><?=$message['name'];?></div>
+            <div class="feedback_cell" id="cell_address"><?=$message['address'];?></div>
+            <div class="feedback_cell" id="cell_telephone"><?=$message['telephone'];?></div>
+            <div class="feedback_cell" id="cell_email"><?=$message['email'];?></div>
         </div>
-        <? endforeach; ?>
+        <?php endforeach; ?>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -17,7 +17,7 @@
 
 <body>
 
-    <? include_once 'templates/nav.php'; ?>
+    <?php include_once 'templates/nav.php'; ?>
     <div class="page">
         <div class="news">
             <?php
@@ -32,7 +32,7 @@
                 <p class="news_desc"><?=$new['description'];?></p>
                 <a href="#" class="news_full">читать</a>
             </div>
-            <? endforeach; ?>
+            <?php endforeach; ?>
         </div>
     </div>
 
