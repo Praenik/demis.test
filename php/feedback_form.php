@@ -3,7 +3,7 @@ session_start();
 
 include_once 'db_connect.php';
 $db_table = 'feedback';
-$address_site = "http://demis";
+$address_site = "/";
 
 $name = $_POST['name'];
 $address = $_POST['address'];
