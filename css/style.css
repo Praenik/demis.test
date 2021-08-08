@@ -1,0 +1,254 @@
+:root {
+    --red: #94090D;
+    --white: #FFFFFF;
+    --gray: #2e3b43;
+    --light-gray: #797979;
+    --black: #333333;
+    --light: #F8F8F3
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* --- NAVIGATION --- */
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: var(--gray);
+
+    transition: all .2s linear;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+/* --- FEEDBACK --- */
+
+.page {
+    position: relative;
+    height: 100vh;
+}
+
+.feedback_form {
+    background-color: var(--gray);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px;
+}
+
+.feedback_title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.feedback_input {
+    position: relative;
+    width: 300px;
+    height: 20px;
+
+    padding: 10px;
+    margin: 15px 0;
+
+    border: none;
+    border-bottom: var(--light-gray) 2px solid;
+    background-color: transparent;
+
+    color: var(--white);
+    font-size: 18px;
+
+    transition: all .2s linear;
+}
+
+.feedback_input:focus {
+    outline: none;
+    border-bottom: var(--red) 2px solid;
+}
+
+.feedback_input_error {
+    letter-spacing: normal;
+    font-size: 20px;
+}
+
+.feedback_btn {
+    font: inherit;
+    color: var(--white);
+
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: var(--light-gray) 2px solid;
+
+    background-color: inherit;
+    cursor: pointer;
+
+    transition: all .2s linear;
+}
+
+.feedback_btn:hover {
+    border: var(--red) 2px solid;
+}
+
+.feedback_table {
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback_row {
+    display: flex;
+    align-items: center;
+}
+
+.feedback_cell {
+    /*border: var(--white) 1px solid;*/
+    padding: 5px 10px;
+}
+
+.feedback_cell#cell_name {
+    width: 30%;
+}
+
+.feedback_cell#cell_address {
+    width: 19.5%;
+}
+
+.feedback_cell#cell_telephone {
+    width: 20%;
+}
+
+.feedback_cell#cell_email {
+    width: 25%;
+}
+
+/* --- NEWS --- */
+
+.news {
+    margin-top: 150px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news_item {
+    background-color: var(--white);
+
+    width: 350px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.news_logo {
+    margin: -15px;
+    width: 380px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news_title {
+    margin: 20px 0 10px;
+    color: var(--red);
+}
+
+.news_desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    box-orient: vertical;
+
+    color: var(--gray);
+}
+
+.news_full {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--red);
+    margin: 20px -15px -15px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border: var(--red) 2px solid;
+    transition: all .2s linear;
+}
+
+.news_full:hover {
+    color: var(--red);
+    background-color: var(--white);
+}
+
+@media screen and (max-width: 980px) {
+
+    .feedback_form {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .feedback_input {
+        margin: 15%;
+    }
+
+    .feedback_table {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .feedback_cell {
+        padding: 0;
+    }
+
+    .feedback_cell#cell_name {
+        width: 30%;
+        padding-left: 5px;
+    }
+
+    .feedback_cell#cell_address {
+        width: 19.5%;
+    }
+
+    .feedback_cell#cell_telephone {
+        width: 15%;
+    }
+
+    .feedback_cell#cell_email {
+        width: 25%;
+    }
+
+    .news {
+        margin-top: 15px;
+    }
+
+    .news_item {
+        width: 100vw;
+    }
+}
