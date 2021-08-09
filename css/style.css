@@ -218,6 +218,7 @@ body {
     .feedback_form {
         width: 100vw;
         align-items: center;
+        margin-top: 15px;
     }
 
     .feedback_input {
@@ -234,24 +235,12 @@ body {
         margin: 10px 5px;
     }
 
-    .feedback_cell {
-        padding: 0;
-    }
-
-    .feedback_cell#cell_name {
-        width: 50%;
-    }
-
-    .feedback_cell#cell_address {
-        width: 50%;
-    }
-
-    .feedback_cell#cell_telephone {
-        width: 50%;
-    }
-
+    .feedback_cell#cell_name,
+    .feedback_cell#cell_address,
+    .feedback_cell#cell_telephone,
     .feedback_cell#cell_email {
         width: 50%;
+        padding: 0;
     }
 
     .news {
