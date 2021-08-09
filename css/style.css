@@ -207,15 +207,21 @@ body {
 
 @media screen and (max-width: 980px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .page {
+        height: 75vh;
+    }
+
     .feedback_form {
         width: 100vw;
-        height: 100vh;
-        margin-top: 15px;
         align-items: center;
     }
 
     .feedback_input {
-        margin: 15%;
+        margin: 35px;
     }
 
     .feedback_table {
@@ -223,25 +229,29 @@ body {
         flex-wrap: wrap;
     }
 
+    .feedback_row {
+        flex-wrap: wrap;
+        margin: 10px 5px;
+    }
+
     .feedback_cell {
         padding: 0;
     }
 
     .feedback_cell#cell_name {
-        width: 30%;
-        padding-left: 5px;
+        width: 50%;
     }
 
     .feedback_cell#cell_address {
-        width: 19.5%;
+        width: 50%;
     }
 
     .feedback_cell#cell_telephone {
-        width: 15%;
+        width: 50%;
     }
 
     .feedback_cell#cell_email {
-        width: 25%;
+        width: 50%;
     }
 
     .news {
