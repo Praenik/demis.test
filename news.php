@@ -27,7 +27,7 @@
             foreach ($news as $new):
             ?>
             <div class="news_item">
-                <img src="http://placehold.it/350x150" alt="" class="news_logo">
+                <img src="img/news/<?=$new['img']?>.jpg" alt="" class="news_logo">
                 <h3 class="news_title"><?=$new['title'];?></h3>
                 <p class="news_desc"><?=$new['description'];?></p>
                 <a href="#" class="news_full">читать</a>
