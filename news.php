@@ -23,7 +23,7 @@
             <?php
             include_once 'php/db_connect.php';
             $db_table = 'news';
-            $news = $db->query("SELECT * FROM $db_table LIMIT 3");
+            $news = $db->query("SELECT * FROM $db_table ORDER BY id DESC LIMIT 3");
             foreach ($news as $new):
             ?>
             <div class="news_item">
